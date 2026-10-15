@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mosaico dinámico de números</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="mosaico.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <p class="h1">Mosaico dinámico de números</p>
+            <p class="h2">Ciclos y creación de elementos con JavaScript</p>
+        </header>
+        <main>
+            <section class="nodo">
+                <article class="campo">
+                    <label for="limite">Ingresa el número límite del mosaico:</label>
+                    <input type="number" id="limite" min="1" max="100" step="1" placeholder="Ej. 20">
+                </article>
+
+                <button type="button" id="btnGenerar">Generar mosaico</button>
+
+                <p id="mensaje" role="status" aria-live="polite"></p>
+
+                <section class="lista">
+                    <p class="h3">Mosaico de números</p>
+                    <p class="indicacion">Los números pares y los impares tienen colores diferentes.</p>
+                    <section id="mosaico" aria-label="Números generados"></section>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>Mauricio Chavoya Soto</p>
+            <p>Séptimo semestre / Grupo B / Turno Vespertino</p>
+            <img src="badge.gif" alt="">
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamo de equipo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="prestamo.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Préstamo de equipo</h1>
+            <h2>Operadores lógicos con JavaScript</h2>
+        </header>
+        <section class="prestamo">
+            <article class="campo">
+                <label for="horas">Horas solicitadas</label>
+                <input type="number" id="horas" step="1">
+            </article>
+            <fieldset class="requisitos">
+                <legend>Requisitos del préstamo</legend>
+                <article class="check">
+                    <input type="checkbox" id="credencial">
+                    <label for="credencial">Presenta credencial</label>
+                </article>
+                <article class="check">
+                    <input type="checkbox" id="autorizacion">
+                    <label for="autorizacion">Cuenta con autorización del docente</label>
+                </article>
+                <article class="check">
+                    <input type="checkbox" id="pendiente">
+                    <label for="pendiente">Tiene equipo pendiente de devolver</label>
+                </article>
+            </fieldset>
+            <button type="button" id="btnVerificar">Verificar préstamo</button>
+            <article class="respuesta">
+                <p id="resultado">Aquí aparecerá el resultado.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Mauricio Chavoya Soto</p>
+        <p>Séptimo semestre / B - F8 / Turno Vespertino</p><br>
+        <img src="badge.gif">
+    </footer>
+</body>
+</html>

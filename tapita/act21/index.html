@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="operaciones.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Calculadora con JavaScript</h1>
+        </header>
+        <section class="calculadora">
+            <article class="campo">
+                <label for="operacion">Operación</label>
+                <select id="operacion">
+                    <option value="suma" selected>Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                    <option value="potencia">Potencia</option>
+                    <option value="residuo">Residuo</option>
+                    <option value="comparacion">Comparación</option>
+                </select>
+            </article>
+            <article class="campo">
+                <label for="campoN1">Valor uno</label>
+                <input type="number" id="campoN1" step="1">
+            </article>
+            <article class="campo">
+                <label for="campoN2">Valor dos</label>
+                <input type="number" id="campoN2" step="1">
+            </article>
+            <button type="button" id="btnCalcular">Calcular</button>
+            <article class="respuesta">
+                <h2>=</h2>
+                <p id="resultado"></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <section class="data">
+            <img src="name.gif" width="40%" height="40%"><br>
+            <img src="info.gif" width="30%" height="30%">
+        </section>
+        <img src="badge.gif">
+    </footer>
+</body>
+</html>
