@@ -7,7 +7,7 @@ function generarFizzBuzz() {
         const bloque = document.createElement("div");
 
         if (numero % 3 === 0 && numero % 5 === 0) {
-            bloque.textContent = "FizzBuzz";
+            bloque.textContent = "Fizz"+"+"\n"+"Buzz";
             bloque.classList.add("fizzbuzz");
         } else if (numero % 3 === 0) {
             bloque.textContent = "Fizz";
